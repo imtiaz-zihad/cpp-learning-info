@@ -1,0 +1,218 @@
+# **Day 1**
+
+### key feature of C ++
+
+- **Object-Oriented Programming (OOP)**
+- **Standard Template Library (STL)                                                                                                                               —>provide various common data structures (like arrays, vectors, lists, maps) and algorithms (such as sorting, searching).**
+- **Performance and Efficiency                                                                                                                              —>control over memory management and offering features like inline functions,, which can significantly enhance execution speed.**
+- **Portability                                                                                                                                                            —>C++ code can be compiled on different platforms with minimal changes, making it a portable language suitable for cross-platform development.**
+
+Example Code —→
+
+#include <iostream>
+
+int main() {
+std::cout << "Hello, World!" << std::endl;
+return 0;
+}
+
+# **Day 2**
+
+• Keywords cannot be used as identifiers (variable names, function names, etc.) because they already have predefined meanings.
+
+In terms of performance, `\n` is generally faster than `std::endl`. `std::endl` flushes the output buffer, which may impact performance, especially for large outputs. On the other hand, `\n` does not flush the buffer immediately, making it more efficient.
+
+C++
+
+#include <iostream> // Preprocessor directive (optional)
+
+using namespace std; // Namespaces (optional)
+
+// Function definitions
+
+int main() {
+
+// Variable declarations and statements
+
+cout << "Hello, World!" << endl;
+
+return 0;
+
+}
+
+# **Day 3**
+
+#include <iostream>
+using namespace std;
+
+int main() {
+// Variables
+int age = 25;
+double pi = 3.14;
+char grade = 'A';
+
+```cpp
+// Constants
+const int LIGHT_SPEED = 299792458;
+
+// Literals
+int num1 = 42; // Integer literal
+double num2 = 2.71828; // Floating-point literal
+char letter = 'X'; // Character literal
+string message = "Hello, World!"; // String literal
+
+// Display values
+cout << "Age: " << age << endl;
+cout << "Pi: " << pi << endl;
+cout << "Grade: " << grade << endl;
+cout << "Speed of light: " << LIGHT_SPEED << " m/s" << endl;
+cout << "Integer literal: " << num1 << endl;
+cout << "Floating-point literal: " << num2 << endl;
+cout << "Character literal: " << letter << endl;
+cout << "String literal: " << message << endl;
+
+return 0;
+
+```
+
+}
+
+# **Day 4**
+
+Constants can be declared in C++ using the `const` keyword. The `const` keyword is placed before the data type of the variable to indicate that its value will not change.
+
+**input & output**
+
+```cpp
+#include <iostream>
+int main(){
+    int num;
+    std::cout << "Enter a Number\n";
+    std::cin >> num;
+    std::cout <<"Your entered :" << num << std::endl;
+    return 0;
+
+}
+```
+
+**Multiple Inputs from the User**
+
+```cpp
+#include<iostream>
+int main(){
+    int num1 ,num2;
+    std::cout << "Enter Two Number For Sum";
+    std::cin >> num1 >> num2 ;
+    std::cout <<"Sum :" <<num1 + num2 <<std::endl;
+    return 0 ;
+}
+```
+
+```cpp
+// Addition  Subtraction Multiplication Division Modulus 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 10, b = 3;
+    cout << "a + b = " << a + b << endl;  // Output: 13
+    cout << "a - b = " << a - b << endl;  // Output: 7
+    cout << "a * b = " << a * b << endl;  // Output: 30
+    cout << "a / b = " << a / b << endl;  // Output: 3
+    cout << "a % b = " << a % b << endl;  // Output: 1
+    return 0;
+}
+
+```
+
+```cpp
+//Relational Operators
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 10, b = 20;
+    cout << (a == b) << endl;  // Output: 0 (false)
+    cout << (a != b) << endl;  // Output: 1 (true)
+    cout << (a > b) << endl;   // Output: 0 (false)
+    cout << (a < b) << endl;   // Output: 1 (true)
+    cout << (a >= b) << endl;  // Output: 0 (false)
+    cout << (a <= b) << endl;  // Output: 1 (true)
+    return 0;
+}
+```
+
+```cpp
+//Increment and Decrement Operators
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 10;
+    cout << "a = " << a << endl;   // Output: a = 10
+    a++;
+    cout << "a++ = " << a << endl; // Output: a++ = 11
+    a--;
+    cout << "a-- = " << a << endl; // Output: a-- = 10
+    return 0;
+}
+```
+
+```cpp
+// Conditional (Ternary) Operator
+//  condition ? expression1 : expression2;  (ternary operation)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 10, b = 20;
+    int max = (a > b) ? a : b;
+    cout << "The maximum value is " << max << endl;  // Output: The maximum value is 20
+    return 0;
+}
+```
+
+# **Day 5**
+
+**Conditional Statements** Conditional Statements are block of statements used to execute code based on a certain condition. There are two types: `if-else` and `Switch` statements.
+
+**Loop Statements** Loop statements are used to repeat certain task or a block of code. Types are: `for`, `while` and `do-while` Loops.
+
+**if-else Statement**
+
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+    int x = 10;
+
+    if (x > 15) {
+        cout << "x is greater than 15";
+    } else {
+        cout << "x is not greater than 15";
+    }
+}
+```
+
+**Nested if-else Statement**
+
+```cpp
+#include<iostream>
+using namespace std;
+
+int main(){
+    int x = 10;
+    int y = 20;
+    if (x > 5) {
+        if (y > 15) {
+            cout << "x is greater than 5 and y is greater than 15";
+        } else {
+            cout << "x is greater than 5 but y is not greater than 15";
+        }
+    } else {
+        cout << "x is not greater than 5";
+    }
+}
+```
